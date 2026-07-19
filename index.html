@@ -8,7 +8,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:title" content="월드비전교회" />
 <meta property="og:description" content="하나님 나라의 비전을 품고 세상에 사랑을 전하는 월드비전교회" />
-<meta property="og:image" content="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/15.jpg" />
+<meta property="og:image" content="https://wvch-site.vercel.app/15.jpg" />
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" />
 <style>
@@ -18,13 +18,10 @@
 <body>
 <!--
 ====================================================================
-  월드비전교회 — 아임웹 '코드입력' 위젯 붙여넣기용 코드 (최종 v2)
+  월드비전교회 — 홈페이지 (Vercel 정적 호스팅)
   ────────────────────────────────────────────────────────────
-  · 모든 이미지 주소가 아임웹 업로드본으로 반영되어 있습니다.
-  · 히어로 영상은 유튜브(https://youtu.be/RsmjyNX3ms0) 임베드.
-  · v2: 모든 CSS 클래스에 wv- 접두사를 붙여 아임웹 테마와의
-        충돌(헤더 정렬/제목 회색/숫자 분홍배경 등)을 제거했습니다.
-  · 적용: 디자인모드 → 섹션 추가 → '코드입력' 위젯 → 전체폭 → 붙여넣기.
+  · 이미지는 저장소에 함께 배포됩니다(Supabase 미사용 → 정지 무관).
+  · 히어로 영상은 Vimeo 배경 임베드.
   ====================================================================
 -->
 <div id="wvch">
@@ -65,7 +62,7 @@
 
   /* ===== Hero ===== */
   #wvch .wv-hero{position:relative; min-height:clamp(480px,82vh,820px); display:flex; align-items:flex-end; overflow:hidden; background:var(--blue);}
-  #wvch .wv-hero-bg{position:absolute; inset:0; background:var(--blue) url('https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/15.jpg') center/cover no-repeat;}
+  #wvch .wv-hero-bg{position:absolute; inset:0; background:var(--blue) url('/15.jpg') center/cover no-repeat;}
   /* Vimeo 배경영상: 컨테이너를 꽉 채우도록 16:9 확대 후 중앙 정렬 (배경모드라 컨트롤/로고 없음) */
   /* 로딩 중에는 포스터(아래 배경)가 보이고, 영상이 준비되면 부드럽게 페이드인 */
   #wvch .wv-hero-bg iframe{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
@@ -155,7 +152,7 @@
 <!-- ===== HEADER ===== -->
 <header class="wv-hd">
   <div class="wv-wrap wv-nav">
-    <a class="wv-brand" href="#wvch-home" aria-label="월드비전교회 홈"><img class="wv-logo" src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/16.png" alt="월드비전교회" /></a>
+    <a class="wv-brand" href="#wvch-home" aria-label="월드비전교회 홈"><img class="wv-logo" src="/16.png" alt="월드비전교회" /></a>
     <nav class="wv-menu">
       <a href="#wvch-stories">교회</a>
       <a href="#wvch-vision">비전</a>
@@ -187,42 +184,42 @@
     <div class="wv-grid">
 
       <article class="wv-story">
-        <div class="wv-thumb"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/01.jpg" alt="세계를 품는 교회"></div>
+        <div class="wv-thumb"><img src="/01.jpg" alt="세계를 품는 교회"></div>
         <div class="wv-cat">About</div>
         <h3>세계를 품는 교회</h3>
         <p>교회는 복을 받는 곳이 아니라 하나님의 자녀가 되는 곳. 예배 안에서 하나님을 만나 세워지는 한 사람을 소중히 여깁니다.</p>
       </article>
 
       <article class="wv-story">
-        <a class="wv-thumb" href="#wvch-worship"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/02.jpg" alt="함께 드리는 예배"></a>
+        <a class="wv-thumb" href="#wvch-worship"><img src="/02.jpg" alt="함께 드리는 예배"></a>
         <div class="wv-cat">Worship</div>
         <h3>함께 드리는 예배</h3>
         <p>주일 1·2부, 수요예배, 매일 새벽기도. 예배 안에서 하나님을 인격적으로 만나는 자리로 여러분을 초대합니다.</p>
       </article>
 
       <article class="wv-story">
-        <div class="wv-thumb"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/03.jpg" alt="사람을 키우는 교회"></div>
+        <div class="wv-thumb"><img src="/03.jpg" alt="사람을 키우는 교회"></div>
         <div class="wv-cat">Discipleship</div>
         <h3>사람을 키우는 교회</h3>
         <p>복 받는 신앙에서 멈추지 않고, 하나님의 마음을 읽는 성숙한 사람으로. 영유아부터 청년부까지 다음 세대를 세웁니다.</p>
       </article>
 
       <article class="wv-story">
-        <div class="wv-thumb"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/04.jpg" alt="네팔, 베트남으로"></div>
+        <div class="wv-thumb"><img src="/04.jpg" alt="네팔, 베트남으로"></div>
         <div class="wv-cat">World Mission</div>
         <h3>네팔, 베트남으로</h3>
         <p>세워진 사람은 가정에서 민족, 세계로. 월드비전교회는 네팔과 베트남에서 선교 사역을 이어가고 있습니다.</p>
       </article>
 
       <article class="wv-story">
-        <a class="wv-thumb" href="https://www.youtube.com/@월드비전교회wvch" target="_blank" rel="noopener"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/05.jpg" alt="구속사적 강해 설교"></a>
+        <a class="wv-thumb" href="https://www.youtube.com/@월드비전교회wvch" target="_blank" rel="noopener"><img src="/05.jpg" alt="구속사적 강해 설교"></a>
         <div class="wv-cat">Sermons</div>
         <h3>구속사적 강해 설교</h3>
         <p>성경 전체를 꿰뚫는 강해 설교. 최근 출애굽기 성막 시리즈를 이어가고 있습니다. 유튜브에서 다시 보세요.</p>
       </article>
 
       <article class="wv-story">
-        <a class="wv-thumb" href="#wvch-location"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/06.jpg" alt="처음 오셨나요?"></a>
+        <a class="wv-thumb" href="#wvch-location"><img src="/06.jpg" alt="처음 오셨나요?"></a>
         <div class="wv-cat">Welcome</div>
         <h3>처음 오셨나요?</h3>
         <p>예배 10~15분 전에 오시면 안내를 받으실 수 있습니다. 처음 오신 분도 부담 없이 함께 예배드릴 수 있어요.</p>
@@ -239,22 +236,22 @@
   </div>
   <div class="wv-marquee">
     <div class="wv-mtrack">
-      <div class="wv-gtile"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/07.jpg" alt="추수감사주일"><span class="wv-lab">추수감사주일</span></div>
-      <div class="wv-gtile"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/08.jpg" alt="전도축제"><span class="wv-lab">전도축제 You&amp;Me</span></div>
-      <div class="wv-gtile"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/09.jpg" alt="비전트립"><span class="wv-lab">비전트립</span></div>
-      <div class="wv-gtile"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/10.jpg" alt="체육대회"><span class="wv-lab">체육대회</span></div>
-      <div class="wv-gtile"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/11.jpg" alt="성탄 축하예배"><span class="wv-lab">성탄 축하예배</span></div>
-      <div class="wv-gtile"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/12.jpg" alt="교회학교"><span class="wv-lab">교회학교</span></div>
-      <div class="wv-gtile"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/13.jpg" alt="해외 선교"><span class="wv-lab">해외 선교</span></div>
-      <div class="wv-gtile"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/14.jpg" alt="추수감사"><span class="wv-lab">추수감사 감사예배</span></div>
-      <div class="wv-gtile" aria-hidden="true"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/07.jpg" alt=""><span class="wv-lab">추수감사주일</span></div>
-      <div class="wv-gtile" aria-hidden="true"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/08.jpg" alt=""><span class="wv-lab">전도축제 You&amp;Me</span></div>
-      <div class="wv-gtile" aria-hidden="true"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/09.jpg" alt=""><span class="wv-lab">비전트립</span></div>
-      <div class="wv-gtile" aria-hidden="true"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/10.jpg" alt=""><span class="wv-lab">체육대회</span></div>
-      <div class="wv-gtile" aria-hidden="true"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/11.jpg" alt=""><span class="wv-lab">성탄 축하예배</span></div>
-      <div class="wv-gtile" aria-hidden="true"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/12.jpg" alt=""><span class="wv-lab">교회학교</span></div>
-      <div class="wv-gtile" aria-hidden="true"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/13.jpg" alt=""><span class="wv-lab">해외 선교</span></div>
-      <div class="wv-gtile" aria-hidden="true"><img src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/14.jpg" alt=""><span class="wv-lab">추수감사 감사예배</span></div>
+      <div class="wv-gtile"><img src="/07.jpg" alt="추수감사주일"><span class="wv-lab">추수감사주일</span></div>
+      <div class="wv-gtile"><img src="/08.jpg" alt="전도축제"><span class="wv-lab">전도축제 You&amp;Me</span></div>
+      <div class="wv-gtile"><img src="/09.jpg" alt="비전트립"><span class="wv-lab">비전트립</span></div>
+      <div class="wv-gtile"><img src="/10.jpg" alt="체육대회"><span class="wv-lab">체육대회</span></div>
+      <div class="wv-gtile"><img src="/11.jpg" alt="성탄 축하예배"><span class="wv-lab">성탄 축하예배</span></div>
+      <div class="wv-gtile"><img src="/12.jpg" alt="교회학교"><span class="wv-lab">교회학교</span></div>
+      <div class="wv-gtile"><img src="/13.jpg" alt="해외 선교"><span class="wv-lab">해외 선교</span></div>
+      <div class="wv-gtile"><img src="/14.jpg" alt="추수감사"><span class="wv-lab">추수감사 감사예배</span></div>
+      <div class="wv-gtile" aria-hidden="true"><img src="/07.jpg" alt=""><span class="wv-lab">추수감사주일</span></div>
+      <div class="wv-gtile" aria-hidden="true"><img src="/08.jpg" alt=""><span class="wv-lab">전도축제 You&amp;Me</span></div>
+      <div class="wv-gtile" aria-hidden="true"><img src="/09.jpg" alt=""><span class="wv-lab">비전트립</span></div>
+      <div class="wv-gtile" aria-hidden="true"><img src="/10.jpg" alt=""><span class="wv-lab">체육대회</span></div>
+      <div class="wv-gtile" aria-hidden="true"><img src="/11.jpg" alt=""><span class="wv-lab">성탄 축하예배</span></div>
+      <div class="wv-gtile" aria-hidden="true"><img src="/12.jpg" alt=""><span class="wv-lab">교회학교</span></div>
+      <div class="wv-gtile" aria-hidden="true"><img src="/13.jpg" alt=""><span class="wv-lab">해외 선교</span></div>
+      <div class="wv-gtile" aria-hidden="true"><img src="/14.jpg" alt=""><span class="wv-lab">추수감사 감사예배</span></div>
     </div>
   </div>
 </section>
@@ -328,7 +325,7 @@
   <div class="wv-wrap">
     <div class="wv-fgrid">
       <div class="wv-fcol" style="max-width:300px;">
-        <a class="wv-brand" href="#wvch-home"><img class="wv-logo" src="https://fpoqqkfnagxcegnpofqh.supabase.co/storage/v1/object/public/images/17.png" alt="월드비전교회" style="height:32px;" /></a>
+        <a class="wv-brand" href="#wvch-home"><img class="wv-logo" src="/17.png" alt="월드비전교회" style="height:32px;" /></a>
         <p style="margin-top:14px;">하나님 나라의 비전을 품고<br/>세상에 사랑을 전하는 월드비전교회</p>
       </div>
       <div class="wv-fcol"><h5>예배</h5><p>주일 1부 08:40 / 2부 10:40</p><p>수요 19:30 · 새벽 05:30</p></div>
