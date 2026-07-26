@@ -119,6 +119,7 @@
   #wvch .wv-loc .wv-row .wv-val{font-size:15.5px; color:var(--ink);}
   #wvch .wv-mapbox{aspect-ratio:4/3; background:#e7e3d8; border:1px solid var(--line); border-radius:3px; overflow:hidden;}
   #wvch .wv-mapbox iframe{width:100%; height:100%; border:0; display:block;}
+  #wvch .wv-naver-mob{display:none;}  /* 지도 아래 네이버 버튼: 모바일에서만 노출 */
 
   /* ===== Footer ===== */
   #wvch .wv-ft{background:var(--ink); color:#cbc8bd; padding:60px 0 40px;}
@@ -142,6 +143,11 @@
     #wvch .wv-worship th:first-child,#wvch .wv-worship td:first-child{width:56%;}
     #wvch .wv-worship th,#wvch .wv-worship td{padding:14px 8px;}
     #wvch .wv-loc-grid{grid-template-columns:1fr; gap:30px;}
+    /* 모바일: 네이버 버튼은 지도 아래 중앙, 왼쪽 칸 버튼은 숨김 */
+    #wvch .wv-naver-pc{display:none;}
+    #wvch .wv-naver-mob{display:block;}
+    /* 모바일: 푸터 '채널'을 '예배' 오른쪽으로 → 오시는길을 뒤로 */
+    #wvch .wv-f-loc{order:1;}
     #wvch .wv-vrow{grid-template-columns:54px 1fr; gap:14px 16px;}
     #wvch .wv-vrow p{grid-column:2/3;}
     #wvch .wv-gtile{width:300px; height:200px;}
@@ -318,12 +324,13 @@
         <div class="wv-row"><div class="wv-lab">주소</div><div class="wv-val">경기도 구리시 벌말로70번길 77</div></div>
         <div class="wv-row"><div class="wv-lab">약도</div><div class="wv-val">벌말삼거리에서 타이어월드(말타이어) 골목으로 들어와, 토평성당을 지나 골목 끝까지 오시면 교회가 있습니다.</div></div>
         <div class="wv-row"><div class="wv-lab">문의</div><div class="wv-val">010-3656-0935</div></div>
+        <a class="wv-btn wv-blue wv-naver-pc" style="margin-top:24px;" href="https://map.naver.com/p/search/경기도%20구리시%20벌말로70번길%2077" target="_blank" rel="noopener">네이버 지도에서 보기</a>
       </div>
       <div class="wv-mapbox">
         <iframe src="https://maps.google.com/maps?q=%EB%8C%80%ED%95%9C%EC%98%88%EC%88%98%EA%B5%90%EC%9E%A5%EB%A1%9C%ED%9A%8C%20%EC%9B%94%EB%93%9C%EB%B9%84%EC%A0%84%EA%B5%90%ED%9A%8C&z=17&hl=ko&output=embed" loading="lazy" title="월드비전교회 위치 지도" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
-    <div style="text-align:center; margin-top:32px;"><a class="wv-btn wv-blue" href="https://map.naver.com/p/search/경기도%20구리시%20벌말로70번길%2077" target="_blank" rel="noopener">네이버 지도에서 보기</a></div>
+    <div class="wv-naver-mob" style="text-align:center; margin-top:32px;"><a class="wv-btn wv-blue" href="https://map.naver.com/p/search/경기도%20구리시%20벌말로70번길%2077" target="_blank" rel="noopener">네이버 지도에서 보기</a></div>
   </div>
 </section>
 
@@ -336,8 +343,8 @@
         <p style="margin-top:14px;">하나님 나라의 비전을 품고<br/>세상에 사랑을 전하는 월드비전교회</p>
       </div>
       <div class="wv-fcol"><h5>예배</h5><p>주일 1부 08:40 / 2부 10:40</p><p>수요 19:30 · 새벽 05:30</p></div>
-      <div class="wv-fcol"><h5>채널</h5><a href="https://www.instagram.com/wvc_7077/?hl=ko" target="_blank" rel="noopener">인스타그램</a><a href="https://www.youtube.com/@월드비전교회wvch" target="_blank" rel="noopener">유튜브</a><a href="https://blog.naver.com/worldvision0691" target="_blank" rel="noopener">네이버 블로그</a></div>
-      <div class="wv-fcol"><h5>오시는길</h5><p>경기도 구리시 벌말로70번길 77</p><p>☎ 010-3656-0935</p></div>
+      <div class="wv-fcol wv-f-loc"><h5>오시는길</h5><p>경기도 구리시 벌말로70번길 77</p><p>☎ 010-3656-0935</p></div>
+      <div class="wv-fcol wv-f-ch"><h5>채널</h5><a href="https://www.instagram.com/wvc_7077/?hl=ko" target="_blank" rel="noopener">인스타그램</a><a href="https://www.youtube.com/@월드비전교회wvch" target="_blank" rel="noopener">유튜브</a><a href="https://blog.naver.com/worldvision0691" target="_blank" rel="noopener">네이버 블로그</a></div>
     </div>
     <div class="wv-copy"><span>© 2026 대한예수교장로회 월드비전교회</span><span>WORLD VISION CHURCH</span></div>
   </div>
